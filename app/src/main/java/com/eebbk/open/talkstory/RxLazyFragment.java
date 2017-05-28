@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 
 import com.trello.rxlifecycle.components.support.RxFragment;
 
+import butterknife.ButterKnife;
+
 /**
  * Desc:
  * Author: YangShangZhen
@@ -45,6 +47,7 @@ public abstract class RxLazyFragment extends RxFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ButterKnife.bind(this, view);
         finishCreateView(savedInstanceState);
     }
 

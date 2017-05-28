@@ -40,7 +40,6 @@ public class RecordActivity extends RxAppBaseActivity {
     @BindView(R.id.pager)
     ViewPager mPager;
 
-    private Fragment[] mFragments;
 
     @Override
     public int getLayoutId() {
@@ -56,13 +55,6 @@ public class RecordActivity extends RxAppBaseActivity {
     @Override
     public void initToolBar() {
         setSupportActionBar(mToolbar);
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // TODO: add setContentView(...) invocation
-        ButterKnife.bind(this);
     }
 
     public class MyAdapter extends FragmentPagerAdapter {

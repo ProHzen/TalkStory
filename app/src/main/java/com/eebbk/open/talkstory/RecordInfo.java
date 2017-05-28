@@ -3,6 +3,8 @@ package com.eebbk.open.talkstory;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import io.realm.RealmObject;
+
 /**
  * Desc:
  * Author: YangShangZhen
@@ -10,7 +12,7 @@ import android.os.Parcelable;
  * Email:  369013520@qq.com
  */
 
-public class RecordInfo implements Parcelable {
+public class RecordInfo extends RealmObject implements Parcelable{
 
     private String mName;
     private String mFilePath;
